@@ -1,0 +1,4 @@
+In this project, I develop an Autoencoder model to detect cyber-physical attacks on UAV networks. Although trained on labeled data here, it is not necessary to provide labels to the Autoencoder model if all observations in the 
+training dataset are benign network observations. The model detects attacks by reconstructing the input vector into an output vector and comparing the two to gather the reconstruction error- if this error is above the threshold percentile hyperparameter, then the input sample is labeled as an attack. This Autoencoder approach is very flexible because the costs of labeling training data can be avoided and ground zero attacks (never-before-seen attacks) are able to be detected.
+
+The dataset used is publicly available at: https://github.com/uamughal/UAVs-Dataset-Under-Normal-and-Cyberattacks.
